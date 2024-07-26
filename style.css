@@ -1,0 +1,191 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.navlist{
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 550;
+        font-style: normal;
+
+        height: 12vh;
+        width: 100%;
+        justify-content: right;
+        align-items: center;
+        padding-right: 3%;
+        
+    display: flex;
+    gap: 3.5rem;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #3d3d3d;
+    position: relative;
+}
+
+.large-container{
+    background-color: #ececec;
+    width: 100%;
+    height: 100vh;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.icons .fa-brands{
+    color: #3d3d3d;
+    
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.icons  a{
+    text-decoration: none;
+   
+    
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap:2.5rem;
+    
+}
+
+#strokeme {
+    color: #ececec;
+    background-color:#ececec;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  
+.logo{
+    position: absolute;
+    margin: 0;
+    height: 15vh;
+    width: 12;
+    padding-left: 1%;
+}
+
+.content{
+    margin-top: 12%;
+    margin-left: 15%;
+    text-align: center;
+    
+    align-items: center;
+    margin-bottom: 12rem;
+    
+    
+
+}
+
+#heading{
+    font-size: 110%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+}
+
+#design{
+    font-size: 800%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+#strokeme{
+    font-size: 800%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#heading span{
+    color: #ffa93c;
+    font-size: 120%;
+}
+
+.btn-container button{
+    
+    border : .1rem solid  #ffa93c;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .8sec ease;
+
+
+}
+
+button:nth-child(1){
+    background-color: #ffa93c;
+    color: #ececec;
+    margin-right: 5rem;
+}
+button:nth-child(2){
+    background-color: transparent;
+    color: #ffa93c;
+    margin-left: 5rem;
+}
+
+button:nth-child(1):hover{
+    background: transparent;
+    color: #ffa93c;
+}
+
+button:nth-child(2):hover{
+    background: #ffa93c;
+    color: #ececec;
+}
+
+.icons :hover{
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:#ffa93c ;
+}
+
+.navlist li a::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    background: #ffa93c;
+    height: .1rem;
+    left:0;
+    bottom:-5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+
+}
+.navlist li a:hover:after{
+    transform: scaleX(1);
+}
+
+
+.navlist li  :hover{
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:#ffa93c ;
+    
+}
+
